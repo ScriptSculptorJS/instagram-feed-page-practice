@@ -1,0 +1,157 @@
+/* made this container fixed to the bottom of the page spanning from left to right. turned it into a flexbox with its content in a row with space all around each item */
+.nav-div {
+  z-index: 100;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 55px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid rgb(71, 71, 71);
+}
+
+.small-nav-top-div {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  opacity: 1px;
+}
+
+.large-nav-top-div,
+.large-nav-bottom-div {
+  opacity: 0;
+  display: none;
+}
+
+.instagram-icon-div {
+  margin-bottom: 34px;
+}
+
+.icon-div {
+  height: 26px;
+  width: 26px;
+  /* all above needs to be removed to go back to where I had it at first */
+  /*padding-top: 4px;*/
+  z-index: 1;
+  overflow: hidden;
+}
+
+.instagram-icon {
+  margin-top: -5px;
+  margin-left: -5px;
+  height: 34px;
+}
+
+.home-div {
+  margin-left: 16px;
+}
+
+/* made changes to the images and used what I could find on the internet even though they are not identical to what Instagram has */
+.home,
+.direct,
+.search-icon {
+  height: 26px;
+}
+
+.explore {
+  height: 38px;
+  margin-top: -6px;
+  margin-left: -6px;
+}
+
+.reels {
+  height: 32px;
+  margin-top: -3px;
+  margin-left: -3px;
+}
+
+.new-post {
+  margin-top: -6px;
+  margin-left: -6px;
+  height: 38px;
+}
+
+.direct {
+  margin-left: -5px;
+}
+
+.heart-icon {
+  margin-top: -12px;
+  margin-left: -34.5px;
+  height: 50px;
+}
+
+.profile {
+  height: 26px;
+  border-radius: 15px;
+}
+
+.profile-div {
+  margin-right: 17px;
+}
+
+@media (min-width: 834px) and (max-height: 635px) {
+  .nav-div {
+    height: 646px;
+  }
+}
+
+@media (min-width: 834px) {
+  .nav-div {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    width: 80px;
+    height: 100%;
+    /*background-color: black;*/
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*justify-content:center;*/
+    border-right: 1px solid rgb(71, 71, 71);
+    border-top: none;
+    z-index: 100;
+    padding: 22px 0;
+  }
+  .small-nav-top-div {
+    opacity: 0;
+    display: none;
+  }
+  .large-nav-top-div {
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*justify-content: space-around;*/
+    row-gap: 36px;
+    height: 600px;
+    margin-top: 18px;
+    margin-bottom: 22px;
+  }
+  .large-nav-bottom-div {
+    opacity: 1;
+    display: block;
+    margin-top: auto;
+    margin-bottom: 52px;
+  }
+  .instagram-icon-div {
+    opacity: 1;
+    display: block;
+    margin-bottom: 27px;
+  }
+  .icon-div {
+    background-color: green;
+  }
+  .home-div {
+    margin-left: 0px;
+  }
+  .profile-div {
+    margin-right: 0px;
+  }
+}
