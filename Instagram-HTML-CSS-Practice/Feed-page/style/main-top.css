@@ -14,9 +14,7 @@ main {
   column-gap: 17px;
   margin-top: 74px;
   padding-top: 20px;
-  
   flex-shrink: 0;
-  
 }
 
 /* made a large circle and made its background gradient to outline the profile circle */
