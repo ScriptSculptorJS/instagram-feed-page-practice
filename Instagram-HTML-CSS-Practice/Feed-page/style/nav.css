@@ -31,7 +31,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  /*justify-content: space-around;*/
   row-gap: 32px;
   height: 600px;
   margin-top: 16px;
@@ -125,6 +124,16 @@
   .nav-div {
     height: 653px;
   }
+  .large-nav-red-dot {
+    
+    top: 412px;
+    left: 45px;
+    background-color: red;
+    border: 2.5px solid black;
+    height: 9px;
+    width: 9px;
+    border-radius: 8px;
+  }
 }
 
 @media (min-width: 834px) and (min-height: 666px) {
@@ -139,11 +148,23 @@
   .large-nav-bottom-div {
     margin-bottom: 63px; 
   }
+  .large-nav-red-dot {
+    top: 437px;
+    left: 45px;
+    background-color: red;
+    border: 2.5px solid black;
+    height: 9px;
+    width: 9px;
+    border-radius: 8px;
+  }
 }
 
 @media (min-width: 834px) and (min-height: 692px) {
   .nav-div {
     height: 100%;
+  }
+  .large-nav-red-dot {
+    top: 437px;
   }
 }
 
@@ -187,4 +208,7 @@
   .profile-div {
     margin-right: 0px;
   }
+  .large-nav-red-dot {
+    position: absolute;
+  }  
 }
